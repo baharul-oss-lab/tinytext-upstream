@@ -29,3 +29,5 @@ word_count("one two  three")  # 3
 ```bash
 pytest -q
 ```
+
+# competing attempt

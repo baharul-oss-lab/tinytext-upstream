@@ -39,6 +39,10 @@ def test_word_wrap_short_text_is_one_line():
     assert word_wrap("hello", 10) == ["hello"]
 
 
+def test_word_wrap_counts_space_when_fitting_next_word():
+    assert word_wrap("aaaa bbbbb", 9) == ["aaaa", "bbbbb"]
+
+
 def test_slugify_unicode():
     assert slugify("café") == "cafe"
     assert slugify("Héllo Wörld") == "hello-world"
